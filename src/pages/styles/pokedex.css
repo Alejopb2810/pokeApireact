@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.pokedex {
+    background-color: white;
+}
+
+.pokedex__nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pokedex__img {
+    margin: 0.6em;
+    width: 75%;
+    height: auto;
+    background-image: linear-gradient(90deg, rgb(9, 9, 9), rgb(230, 14, 14), rgb(9, 9, 9));
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.pokedex__phrase {
+    font-family: 'Righteous', cursive;
+    font-weight: 200;
+    font-size: 21px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.pokedex__phrase span {
+    color: red;
+}
+
+.pokedex__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pokedex__input {
+    font-size: 1.1em;
+    border-radius: 5px;
+    border-color: rgb(246, 241, 241);
+    margin-bottom: 0.5em;
+    position: relative;
+    left: 5px;
+}
+
+.pokedex__input::placeholder {
+    text-align: center;
+    color: rgb(209, 200, 200);
+}
+
+.pokedex__button {
+    font-size: 1.2em;
+    position: relative;
+    bottom: 6px;
+    right: 5px;
+    background-color: rgb(223, 27, 27);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.pokedex__change {
+    font-size: 1.1em;
+    border-radius: 5px;
+    padding-right: 30px;
+    position: relative;
+    bottom: 6px;
+    margin-right: 10px;
+    align-items: center;
+}

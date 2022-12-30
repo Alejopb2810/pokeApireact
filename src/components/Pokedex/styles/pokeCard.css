@@ -1,0 +1,255 @@
+.poke-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1480;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.poke-card {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 0.7em;
+    border: 0.4em solid #87aa3b;
+}
+
+.poke-card__header {
+    background-color: #aaa;
+    height: 120px;
+    position: relative;
+}
+
+.poke-card__sprite {
+    width: 50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.poke-card__body {
+    padding-top: 2.6em;
+}
+
+.poke-card__name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.poke-card__types-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.poke-card__type {
+    position: relative;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 0.9em;
+}
+
+.poke-card__type:nth-child(2)::before {
+    content: '/';
+    position: absolute;
+    left: -11px;
+}
+
+.poke-card__footer {
+    padding: 1em 0.8em 2em;
+}
+
+.poke-card__stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 25px 5px;
+}
+
+.poke-card__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.poke-card__label {
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-weight: 200;
+    font-size: 0.7rem;
+}
+
+.bg-grass,
+.color-grass {
+    background-image: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+
+.border-grass {
+    border-color: #7EC6C5;
+}
+
+.bg-fire,
+.color-fire {
+    background-image: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+
+.border-fire {
+    border-color: #E35825;
+}
+
+.bg-water,
+.color-water {
+    background-image: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+}
+
+.border-water {
+    border-color: #1479FB;
+}
+
+.bg-ice,
+.color-ice {
+    background-image: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+}
+
+.border-ice {
+    border-color: #6FBEDF;
+}
+
+.bg-dark,
+.color-dark {
+    background-image: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+    color: #fff;
+}
+
+.border-dark {
+    border-color: #0D1211;
+}
+
+.bg-steel,
+.color-steel {
+    background-image: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+}
+
+.border-steel {
+    border-color: #728881;
+}
+
+.bg-electric,
+.color-electric {
+
+    background-image: linear-gradient(179.75deg, #ece822 -19.96%, #808052 43.67%, #a7cc14 138.4%);
+}
+
+.border-electric {
+    border-color: #868415;
+}
+
+.bg-fighting,
+.color-fighting {
+    background-image: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+}
+
+.border-fighting {
+    border-color: #96402A;
+}
+
+.bg-normal,
+.color-normal {
+    background-image: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+}
+
+.border-normal {
+    border-color: #735259;
+}
+
+.bg-ground,
+.color-ground {
+    background-image: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+}
+
+.border-ground {
+    border-color: #654008;
+}
+
+.bg-poison,
+.color-poison {
+    background-image: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+    width: 100%;
+}
+
+.border-poison {
+    border-color: #A564E3;
+}
+
+.bg-rock,
+.color-rock {
+    background-image: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+}
+
+.border-rock {
+    border-color: #7E7E7E;
+}
+
+.bg-bug,
+.color-bug {
+    background-image: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+
+}
+
+.border-bug {
+    border-color: #62DB60;
+}
+
+.bg-ghost,
+.color-ghost {
+    background-image: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+    color: #fff;
+}
+
+.border-ghost {
+    border-color: #454AA8;
+}
+
+.bg-psychic,
+.color-psychic {
+    background-image: linear-gradient(177.03deg, #b62979 -11.97%, #59205c 57.49%, #787DDA 135.64%);
+    color: #fff;
+}
+
+.border-psychic {
+    border-color: #b62979;
+}
+
+.bg-dragon,
+.color-dragon {
+    background-image: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+}
+
+.border-dragon {
+    border-color: #478A93;
+}
+
+.bg-fairy,
+.color-fairy {
+    background-image: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+}
+
+.border-fairy {
+    border-color: #971B45;
+}
+
+.bg-flying,
+.color-flying {
+    background-image: linear-gradient(179.75deg, #3fa8e9 -19.96%, #cedfe9 43.67%, #5d6e73 138.4%);
+}
+
+.border-flying {
+    border-color: #cedfe9;
+}
